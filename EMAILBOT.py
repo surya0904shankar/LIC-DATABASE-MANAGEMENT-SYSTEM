@@ -8,10 +8,10 @@ def email():
     va = k.fetchall()
     s=smtplib.SMTP('smtp.gmail.com',587)
     s.starttls()
-    s.login("suryalicdb@gmail.com","Lic@1234")
+    s.login("licdb@gmail.com","ABC@1234")
     h=['SNO','NAME','P_NAME','TOT_PREM','DUE_DATE']
     p=(tabulate(va,headers=h,tablefmt='psql'))
-    s.sendmail("suryalicdb@gmail.com","surya090404@gmail.com",p)
+    s.sendmail("licdb@gmail.com","commmerce09@gmail.com",p)
     print("email sent")
     s.quit()
 menu()
